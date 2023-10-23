@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Other dimension values can go here -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+</resources>

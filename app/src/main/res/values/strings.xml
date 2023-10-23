@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CamGuardian</string>
+    <string name="default_web_client_id">907692648324-6nr92e7gmdj485lo6msdt98kgtv5cm7q.apps.googleusercontent.com</string>
+    <string name="permissions_denied">Permissions Denied</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+</resources>

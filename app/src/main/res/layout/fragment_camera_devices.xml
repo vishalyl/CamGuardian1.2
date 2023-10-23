@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera Preview (You can customize the size and position) -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="389dp"
+        android:layout_height="561dp">
+        <!-- Adding TextureView for camera preview -->
+
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="409dp"
+            android:layout_height="542dp"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="168dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Recording Controls -->
+
+    <!-- Output Directory (Hidden) -->
+    <TextView
+        android:id="@+id/tvOutputDirectory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permissions_denied"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <!-- Permissions Denied Message (Hidden) -->
+    <TextView
+        android:id="@+id/tvPermissionsDenied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permissions_denied"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/recordingControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/btnStartRecording"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_recording"
+            android:layout_weight="1"
+            android:enabled="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btnStopRecording"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_recording"
+            android:layout_weight="1"
+            android:enabled="false"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>
